@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+}
+
+.centered-container {
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.centered-container:hover {
+    transform: scale(1.05);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.image-container {
+    text-align: center;
+    transition: transform 0.3s;
+    width: 80%;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.capitais {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+}
+
+.country-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country-box:hover {
+    transform: scale(1.05);
+}
+
+.country-box img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.country-box:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.country-box p {
+    font-size: 1rem;
+    color: #333;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
